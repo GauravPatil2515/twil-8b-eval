@@ -1,0 +1,23 @@
+{
+  "model": "Gemini 3.8 Flash",
+  "results": [
+    {
+      "task_id": "weighted_intervals",
+      "passed": true,
+      "test_output": "PASS weighted_intervals",
+      "test_time_s": 0.0611
+    },
+    {
+      "task_id": "ttl_lru_cache",
+      "passed": true,
+      "test_output": "PASS ttl_lru_cache",
+      "test_time_s": 0.0175
+    },
+    {
+      "task_id": "expr_eval",
+      "passed": true,
+      "test_output": "PASS expr_eval",
+      "test_time_s": 0.0208
+    }
+  ]
+}

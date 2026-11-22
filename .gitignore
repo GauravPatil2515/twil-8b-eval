@@ -1,0 +1,40 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Binaries & Compiled libraries
+bin/
+*.bin
+*.dll
+*.dylib
+
+# Model weights & Checkpoints
+models/
+*.gguf
+*.imatrix
+*.safetensors
+
+# Runtime logs
+*.log
+llama_server.log
+llama_server_programs.log
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

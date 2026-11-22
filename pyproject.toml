@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twil-8b-eval"
+version = "0.1.0"
+description = "Rigorous, resource-guarded coding evaluation harness and benchmark comparing TwIL-8B (Granite-8B) with frontier LLMs."
+readme = "README.md"
+authors = [{ name = "Gaurav Patil", email = "gauravpatil2516@gmail.com" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["llm", "evaluation", "llama-cpp", "twil-8b", "granite", "code-generation", "benchmark"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = [
+    "psutil>=5.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --strict-markers"
